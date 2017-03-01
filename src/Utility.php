@@ -5,7 +5,7 @@
  * Contains \Drupal\ember\Utility.
  */
 
-namespace Drupal\ember;
+namespace Drupal\emberjs;
 
 class Utility {
     // Implement's Javascript's standard encodeURIComponent function.

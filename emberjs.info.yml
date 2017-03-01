@@ -1,6 +1,6 @@
-name: Ember
+name: Ember.js Integration
 description: Ember integration module
 core: 8.x
 type: module
-package: Experimental
+package: Custom
 

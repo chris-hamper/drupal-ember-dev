@@ -1,9 +1,9 @@
 <?php
 
 use Drupal\Component\Serialization\Json;
-use Drupal\ember\Utility;
+use Drupal\emberjs\Utility;
 
-function ember_page_attachments(&$page) {
+function emberjs_page_attachments(&$page) {
     // Ember accepts configuration from the server in the form of a
     // <meta> tag.
     $emberENV = [
@@ -43,17 +43,17 @@ function ember_page_attachments(&$page) {
         // transitions.
         "cedeToDrupal" => [],
 
-        "modulePrefix" => "drupalcon",
+        "modulePrefix" => "chrishamper",
         "environment" => "development",
         "APP" => []
     ];
 
-    $page['#attached']['library'][] = 'ember/ember';
+    $page['#attached']['library'][] = 'emberjs/emberjs';
     $page['#attached']['html_head'][] = [
       [
         '#tag' => 'meta',
         '#attributes' => [
-          'name' => 'drupalcon/config/environment',
+          'name' => 'chrishamper/config/environment',
           'content' => Utility::encodeURIComponent(Json::encode($emberENV))
         ]
       ],
